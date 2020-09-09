@@ -8,4 +8,13 @@
                                     rgba($color-white-dark,.37) 100%);
     padding-top: 8rem;
     padding-bottom: 8rem;
+
+    &__content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 9rem;
+        margin-top: 3.5rem;
+    }
 }

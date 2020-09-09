@@ -1,0 +1,17 @@
+.tech-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__item {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-right: .7rem;
+        padding: .2rem .3rem;
+        
+        &--yellow{border: .2rem solid $color-primary;}
+        &--blue{border: .2rem solid $color-blue;}
+        &--red{border: .2rem solid $color-red;}
+    }
+}
