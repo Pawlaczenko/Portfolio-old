@@ -1,4 +1,91 @@
 .about {
     padding-top: 8rem;
     padding-bottom: 8rem;
+
+    &__header {
+        
+    }
+
+    &__me {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        padding: 4rem 8rem;
+
+        background: url("./../img/back-3.svg");
+        background-size: contain;
+        background-position:center;
+        background-repeat: repeat-x;
+    }
+
+    &__picture{
+        background: url("./../img/me.jpg");
+        background-position: center;
+        background-size: cover;
+
+        width: 45rem;
+        height: 45rem;
+
+        border-radius: 100%;
+        border: 2rem solid $color-primary;
+    }
+
+    &__info {
+        height: 100%;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding-left: 3rem;
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        color: $color-grey;
+        font-weight: 700;
+        margin-bottom: 3rem;
+    }
+
+    &__desc {
+        font-size: 2.3rem;
+        color: $color-grey;
+        margin-bottom: 2rem;
+        margin-left: 2.5rem;
+
+        &--highlight{color: $color-red;}
+    }
+
+    &__lists{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 4rem;
+    }
+
+    &__part{
+
+    }
+
+    &__list {
+        margin-left: 4rem;
+        list-style-type: none;
+    }
+
+    &__item {
+        font-size: 2.4rem;
+        font-weight: 300;
+        position: relative;
+        margin-bottom: 1rem;
+        
+        &::before {
+            content: "";
+            display: block;
+            width: 1rem;
+            height: 1px;
+            background-color: $color-grey;
+            position: absolute;
+            left: -2.5rem;
+            top: 50%;
+        }
+    }
 }
