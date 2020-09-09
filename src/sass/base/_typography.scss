@@ -1,20 +1,42 @@
+@mixin dots($color){
+    background-color: $color;
+    box-shadow: $dot-space 0 0 $color,
+                -$dot-space 0 0 $color;
+}
+
 .heading-dot {
     font-size: 3.5rem;
     font-weight: 300;
 
     &--left {text-align: left;}
-    &--center{text-align: center;}
+    &--center{
+        text-align: center;
+
+        &::before{
+            margin-right: auto;
+            margin-left: auto !important;
+        }
+    }
 
     &::before {
         content: "";
         display: block;
-        background-color: $color-primary;
         width: 1.9rem;
         height: 1.9rem;
+        margin-left: $dot-space;
         border-radius: 100%;
-        box-shadow: 2.5rem 0 0 $color-primary,
-                    5rem 0 0 $color-primary;
         margin-bottom: 1rem;
+    }
 
+    &--yellow::before{@include dots($color-primary);}
+
+    &--white{
+        color: $color-white-light;
+        font-weight: 700;
+        &::before{
+            @include dots($color-white-light);
+        }
     }
 }
+
+
