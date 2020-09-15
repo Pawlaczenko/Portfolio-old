@@ -131,7 +131,7 @@
             <div class="about__me">
                 <figure class="about__picture"></figure>
                 <article class="about__info">
-                    <h3 class="about__heading">My name is Bartek Pawlak</h3>
+                    <h3 class="heading--3 about__heading">My name is Bartek Pawlak</h3>
                     <p class="about__desc">I’m a <span class="about__desc--highlight">Front End Developer</span> from
                         Stróża, Poland. Web Development is my passion.
                         The idea of creating something from scratch that is useful to other people pumps me up everytime
@@ -143,16 +143,16 @@
             </div>
             <div class="about__lists">
                 <div class="about__part">
-                    <h3 class="about__heading">My specialities:</h3>
+                    <h3 class="heading--3 about__heading">My specialities:</h3>
                     <ul class="about__list">
-                        <li class="about__item">JavaScript(ES6+)</li>
-                        <li class="about__item">CSS(SCSS)</li>
+                        <li class="about__item">JavaScript (ES6+)</li>
+                        <li class="about__item">CSS (SCSS)</li>
                         <li class="about__item">HTML</li>
-                        <li class="about__item">RWD(Responsive Web Design)</li>
+                        <li class="about__item">RWD (Responsive Web Design)</li>
                     </ul>
                 </div>
                 <div class="about__part">
-                    <h3 class="about__heading">My Development setup:</h3>
+                    <h3 class="heading--3 about__heading">My Development setup:</h3>
                     <ul class="about__list">
                         <li class="about__item">npm</li>
                         <li class="about__item">git</li>
@@ -160,7 +160,7 @@
                     </ul>
                 </div>
                 <div class="about__part">
-                    <h3 class="about__heading">Software, I use:</h3>
+                    <h3 class="heading--3 about__heading">Software, I use:</h3>
                     <ul class="about__list">
                         <li class="about__item">Visual Studio Code</li>
                         <li class="about__item">Adobe XD</li>
@@ -170,8 +170,48 @@
                 </div>
             </div>
         </section>
-        <section class="contact wrapper">
+        <section id="contact" class="contact wrapper">
             <h2 class="contact__header heading-dot heading-dot--white">Contact:</h2>
+            <div class="contact__container">
+                <form action="#" method="POST" class="contact__form form">
+                    <label for="form-name" class="form__label">Name:</label>
+                    <input type="text" name="name" class="form__input form__input--name" id="form-name">
+                    <label for="form-email" class="form__label">Email:</label>
+                    <input type="email" name="email" class="form__input form__input--email" id="form-email">
+                    <label for="form-message" class="form__label">Message:</label>
+                    <textarea name="message" id="form-message" class="form__input  form__message"></textarea>
+                    <button class="form__button">send</button>
+                </form>
+                <div class="contact__options">
+                    <h3 class="heading--3 contact__heading">Message me by:</h3>
+                    <ul class="contact__links">
+                        <li class="contact__item">
+                            <svg class="contact__icon">
+                                <use xlink:href="./img/_sprite.svg#icon-mail"></use>
+                            </svg>
+                            <a href="#" class="contact__link">bartek.pawlak@gmail.com</a>
+                        </li>
+                        <li class="contact__item">
+                            <svg class="contact__icon">
+                                <use xlink:href="./img/_sprite.svg#icon-phone"></use>
+                            </svg>
+                            +48 500 520 474
+                        </li>
+                        <li class="contact__item">
+                            <svg class="contact__icon">
+                                <use xlink:href="./img/_sprite.svg#icon-facebook"></use>
+                            </svg>
+                            <a href="#" class="contact__link">facebook</a>
+                        </li>
+                        <li class="contact__item">
+                            <svg class="contact__icon">
+                                <use xlink:href="./img/_sprite.svg#icon-linkedin"></use>
+                            </svg>
+                            <a href="#" class="contact__link">linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <footer class="footer wrapper"></footer>
     </div>
