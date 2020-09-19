@@ -15,6 +15,7 @@
 
     &__fig {
         width: 100%;
+        opacity: 1;
         // height: 100%;
     }
 
@@ -44,14 +45,14 @@
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
+        height: 0%;
         background: url('./../img/shapes.svg'),
                     url('./../img/back-paint.svg');
         z-index: -1;
 
         background-size: contain,cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: bottom;
     }
 }
 
