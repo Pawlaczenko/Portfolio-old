@@ -1,7 +1,9 @@
 .contact {
-    background: url("./../img/hire.svg"),$color-primary;
-    background-size: contain;
-
+    background: url("./../img/corner.svg"), url("./../img/hire.svg"), $color-primary;
+    background-size: 40%, contain;
+    background-position: bottom right, left;
+    background-repeat: no-repeat, repeat;
+    
     //Margin collapsing fix 
     padding-top: 6.6rem;
     padding-bottom: 8rem;
