@@ -9,7 +9,7 @@
     &--blue{background-color: $color-blue; color: $color-grey; border: 2px solid $color-blue}
     &--red{background-color: $color-red; color: $color-white-dark;  border: 2px solid $color-red}
 
-    transition: width .2s cubic-bezier(0,1,1,0);
+    transition: width .2s ease-in-out;
 
     &:hover{
         width: 100%;

@@ -1,38 +1,14 @@
 import './../sass/main.scss';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 
-const sections = ['home', 'portfolio', 'about', 'contact'];
-const projects = [{
-    title: 'Tempo',
-    date: 'July 2020',
-    desc: 'Tempo is a website where you can test your typing speed using song lyrics.',
-    img: 'tempo.jpg',
-    techs: ['js', 'scss', 'html', 'wp']
-},
-{
-    title: 'MoviesBLOG',
-    date: 'October - December 2019',
-    desc: 'I developed MoviesBlog as the ending project in my highschool. I wrote both frond and back end.',
-    img: 'moviesblog.jpg',
-    techs: ['js', 'scss', 'html', 'php', 'msql']
-},
-{
-    title: 'pejper Soker',
-    date: 'December 2018 - June 2019',
-    desc: 'Group project. Game based on a well known time killer Paper Soccer. It contains of singleplayer and multiplayer modes.',
-    img: 'pejpersoker.jpg',
-    techs: ['js', 'css', 'html', 'php', 'msql']
-},
-{
-    title: 'Pacman',
-    date: 'December 2017 - May 2018',
-    desc: 'Group project. Developed using p5.js library. Works on canvas.',
-    img: 'pacman.jpg',
-    techs: ['js', 'css', 'html', 'p5']
-}];
+import { projects } from './views/base.js';
+import * as portfolioView from "./views/portfolioView.js";
+
+
+// portfolioView.renderProjects(projects
+projects.forEach(e => portfolioView.renderProjects(e));
 
 let tl = gsap.timeline({ defaults: { duration: 1.5 } });
 

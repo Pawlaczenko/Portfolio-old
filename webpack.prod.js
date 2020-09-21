@@ -24,6 +24,14 @@ module.exports = merge(common, {
           collapseWhitespace: true,
           removeComments: true
         }
+      }),
+      new CopyPlugin({
+        patterns: [
+          {
+            from: './src/img/screens/',
+            to: 'assets/img/', // relative path in output directory
+          }
+        ]
       })
     ]
   },

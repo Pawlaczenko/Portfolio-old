@@ -21,6 +21,10 @@ module.exports = merge(common, {
         {
           from: './src/img/_sprite.svg',
           to: 'assets/img/', // relative path in output directory
+        },
+        {
+          from: './src/img/screens/',
+          to: 'assets/img/', // relative path in output directory
         }
       ]
     }),
