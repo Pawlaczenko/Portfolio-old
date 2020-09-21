@@ -109,6 +109,11 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         margin-top: 4rem;
+        padding: 2rem;
+
+        background-color: $color-white-light;
+        justify-items: center;
+        border: 1px dotted $color-black;
     }
 
     &__part{
@@ -130,11 +135,12 @@
             content: "";
             display: block;
             width: 1rem;
-            height: 1px;
-            background-color: $color-grey;
+            height: 1rem;
+            border-radius: 2px;
+            background-color: $color-primary;
             position: absolute;
             left: -2.5rem;
-            top: 50%;
+            top: 35%;
         }
     }
 }

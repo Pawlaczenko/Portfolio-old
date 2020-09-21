@@ -1,11 +1,15 @@
 .portfolio {
-    background: linear-gradient(90deg, rgba($color-white-dark,.37) 0%, 
-                                    rgba($color-white-dark,.37) 49%, 
-                                    rgba($color-primary,1) 49%, 
-                                    rgba($color-primary,1) 51%, 
-                                    rgba($color-white-dark,.37) 51%, 
-                                    rgba($color-white-dark,.37) 100%),
-                url("./../img/pipes.png");
+    // background: linear-gradient(90deg, rgba($color-white-dark,.37) 0%, 
+    //                                 rgba($color-white-dark,.37) 49%, 
+    //                                 rgba($color-red,.6) 49%,
+    //                                 rgba($color-primary,.6) 50%, 
+    //                                 rgba($color-blue,.6) 51%, 
+    //                                 rgba($color-white-dark,.37) 51%, 
+    //                                 rgba($color-white-dark,.37) 100%);
+    background: url("./../img/stars.svg"), rgba($color-white-dark,.35);
+    background-repeat: repeat-y;
+    background-position: 0%;
+    background-size: 35%;
     padding-top: 8rem;
     padding-bottom: 8rem;
 

@@ -19,4 +19,10 @@
         font-weight: 900;
         color: $color-white-light;
     }
+
+    &--scrolled {
+        background-color: $color-primary;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
 }
