@@ -47,3 +47,18 @@ projectsMrkp.forEach(e => {
 });
 
 // About Me Animation
+
+let aboutTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.about',
+        start: "top 70%"
+    }
+});
+
+const aboutInfo = document.querySelector(".about__info");
+
+aboutTl.from(".about__picture", { borderWidth: "0", ease: "easeOut", duration: 1 })
+    .from(".about__header", { x: 50, opacity: 0, ease: "elastic(1, 0.3)", duration: 1.5 }, "-=.7")
+    .from(aboutInfo.children, { opacity: 0, x: 40, ease: "elastic(1, 0.3)", duration: 1.5, stagger: .25 }, "-=1.2")
+    .from(".about", { backgroundPosition: "120%", ease: "ease", duration: "1.5" }, "-=1.2")
+    .from(".about__lists", { y: 10, opacity: 0, ease: "easeInOut", duration: 1 }, "-=.8");
