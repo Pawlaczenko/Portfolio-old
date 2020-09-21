@@ -6,6 +6,8 @@
     border-right: .6rem solid $color-primary;
     border-left: .6rem solid $color-primary;
 
+    box-shadow: 0px -10px 17px 0px rgba(0,0,0,0.2);
+
     &__figure {
         min-height: 37rem;
         background-color: $color-white-dark;
@@ -57,6 +59,10 @@
         position: relative;
 
         width: fit-content;
+
+        &:hover {
+            font-size: 1.85rem;
+        }
 
         &::before {
             content: "";

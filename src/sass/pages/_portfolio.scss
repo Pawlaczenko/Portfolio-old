@@ -1,11 +1,11 @@
 .portfolio {
-    background: rgba($color-white-dark,.37);
     background: linear-gradient(90deg, rgba($color-white-dark,.37) 0%, 
                                     rgba($color-white-dark,.37) 49%, 
                                     rgba($color-primary,1) 49%, 
                                     rgba($color-primary,1) 51%, 
                                     rgba($color-white-dark,.37) 51%, 
-                                    rgba($color-white-dark,.37) 100%);
+                                    rgba($color-white-dark,.37) 100%),
+                url("./../img/pipes.png");
     padding-top: 8rem;
     padding-bottom: 8rem;
 

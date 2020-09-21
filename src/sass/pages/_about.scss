@@ -1,6 +1,11 @@
 .about {
     padding-top: 8rem;
     padding-bottom: 8rem;
+    background: url("./../img/shapes.svg"),url("./../img/arrows.svg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: right;
+    overflow-y: hidden;
 
     &__header {
         
@@ -11,7 +16,7 @@
         grid-template-columns: max-content 1fr;
         padding: 4rem 8rem;
 
-        background: url("./../img/back-3.svg");
+        // background: url("./../img/back-3.svg");
         background-size: contain;
         background-position:center;
         background-repeat: repeat-x;
@@ -22,11 +27,38 @@
         background-position: center;
         background-size: cover;
 
-        width: 45rem;
-        height: 45rem;
+        width: 55rem;
+        height: 55rem;
 
         border-radius: 100%;
         border: 2rem solid $color-primary;
+        position: relative;
+
+        // box-shadow: ;
+        box-shadow: 0px 0px 0px 3.5rem rgba($color-primary,0.4);
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            border-radius: 100%;
+        }
+
+        &::before {
+            width: 160%;
+            height: 160%;
+            background-color: rgba($color-primary,.3);
+        }
+
+        &::after {
+            width: 250%;
+            height: 250%;
+            background-color: rgba($color-primary,.2);
+        }
     }
 
     &__info {
@@ -37,20 +69,40 @@
         justify-content: center;
         align-items: flex-start;
 
-        padding-left: 3rem;
+        padding-left: 8rem;
     }
 
     &__heading {
+        margin-bottom: 3rem;
+        font-size: 5rem;
+        color: $color-black;
+    }
+
+    &__specHead {
         margin-bottom: 3rem;
     }
 
     &__desc {
         font-size: 2.3rem;
-        color: $color-grey;
+        color: $color-black;
         margin-bottom: 2rem;
         margin-left: 2.5rem;
+        font-weight: 300;
 
-        &--highlight{color: $color-red;}
+        &--highlight{color: $color-grey; font-weight: bold; font-size: 2.35rem;}
+
+        position: relative;
+
+        &:not(:last-child)::before {
+            content: "";
+            width: 1px;
+            height: 100%;
+            background-color: $color-black;
+
+            position: absolute;
+            left: -1.5rem;
+            top: 0;
+        }
     }
 
     &__lists{

@@ -36,7 +36,7 @@ export const projects = [{
     date: 'December 2017 - May 2018',
     desc: 'Group project. Developed using p5.js library. Works on canvas.',
     img: 'pacman.jpg',
-    techs: ['Javascript', 'CSS', 'HTML', 'p5.js'],
+    techs: ['JavaScript', 'SCSS', 'HTML', 'p5.js'],
     liveLink: "pacman",
     gitLink: "PacMan"
 }];

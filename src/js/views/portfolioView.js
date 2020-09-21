@@ -1,10 +1,25 @@
 import { HREFS } from './base.js';
 
+const checkColor = tech => {
+    switch (tech) {
+        case 'JavaScript':
+        case 'SCSS':
+        case 'CSS':
+        case 'HTML':
+            return 'yellow'
+        case 'PHP':
+        case 'MySQL':
+            return 'red';
+        default:
+            return 'blue';
+    }
+}
+
 const renderTechnologies = techs => {
     let markup = '';
 
     techs.forEach((e, i) => {
-        markup += `<li class="tech-list__item tech-list__item--yellow">${e}</li>`;
+        markup += `<li class="tech-list__item tech-list__item--${checkColor(e)}">${e}</li>`;
     });
 
     return markup;
