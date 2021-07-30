@@ -1,20 +1,21 @@
 .button {
     display: block;
+    min-width: 15rem;
     font-size: 1.9rem;
-    padding: 1.2rem 0;
+    font-weight: bold;
+    padding: 1.2rem 1.7rem;
     text-align: center;
-    width: 50%;
     white-space: nowrap;
+    border-radius: 2.5rem;
+    cursor: pointer;
 
-    &--blue{background-color: $color-blue; color: $color-grey; border: 2px solid $color-blue}
-    &--red{background-color: $color-red; color: $color-white-dark;  border: 2px solid $color-red}
+    &--blue{
+        @include buttonBackground($color-blue, $color-blue-dark);
+    }
+    
+    &--red{
+        @include buttonBackground($color-red, $color-red-dark);
+    }
 
     transition: width .2s ease-in-out;
-
-    &:hover{
-        width: 100%;
-        background-color: $color-white-dark;
-        color: $color-grey;
-        border: 2px solid $color-grey;
-    }
 }

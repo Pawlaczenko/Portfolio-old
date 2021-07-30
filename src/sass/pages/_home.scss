@@ -78,10 +78,10 @@
     }
 
     &__buttons{
-        display: flex;
-        flex-direction: row;
-
+        max-width: 40rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         margin-top: 2.7rem;
-        width: 31rem;
+        column-gap: 1rem;
     }
 }

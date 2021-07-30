@@ -39,14 +39,6 @@
     }
 
     &__button {
-        display: block;
-        font-size: 1.8rem;
-        padding: .5rem 2.7rem;
         align-self: flex-end;
-
-        background-color: $color-blue;
-        color: $color-grey;
-        border: none;
-        cursor: pointer;
     }
 }

@@ -15,3 +15,14 @@
         width: $width;
     }
 }
+
+@mixin buttonBackground($base_color, $base_color_dark){
+    background-color: $base_color_dark;
+    color: $color-white-dark; 
+    border: 5px solid $base_color;
+
+    &:hover{
+        background-color: $base_color;
+        border-color: $base-color-dark;
+    }
+}
