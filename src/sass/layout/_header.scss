@@ -13,6 +13,8 @@
     left: 0;
     z-index: 100;
 
+    transition: padding .2s ease;
+
     &__logo {
         display: block;
         font-size: 3.7rem;
@@ -21,7 +23,7 @@
     }
 
     &--scrolled {
-        background-color: $color-primary;
+        background-color: rgba($color-primary,.9);
         padding-top: .5rem;
         padding-bottom: .5rem;
     }

@@ -43,7 +43,7 @@ export const renderProjects = project => {
                 ${renderTechnologies(project.techs)}
             </ul>
             <div class="project__buttons">
-                <a href="${HREFS.portfolio}${project.liveLink}" class="project__button" target="_blank">
+                <a href="${HREFS.githubPages}${project.liveLink}" class="project__button" target="_blank">
                     <svg class="project__icon">
                         <use xlink:href="./assets/img/_sprite.svg#icon-play"></use>
                     </svg>

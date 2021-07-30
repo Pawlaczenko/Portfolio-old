@@ -1,6 +1,7 @@
 export const HREFS = {
     portfolio: "http://moje-portfolio.pl/bartlomiej_pawlak/",
-    github: "https://github.com/Pawlaczenko/"
+    github: "https://github.com/Pawlaczenko/",
+    githubPages: "https://pawlaczenko.github.io/"
 }
 
 export const sections = ['home', 'portfolio', 'about', 'contact'];
@@ -10,7 +11,7 @@ export const projects = [{
     desc: 'Tempo is a website where you can test your typing speed using song lyrics.',
     img: 'tempo.jpg',
     techs: ['JavaScript', 'SCSS', 'HTML', 'Webpack'],
-    liveLink: "Tempo",
+    liveLink: "Tempo-ghp",
     gitLink: "Tempo"
 },
 {

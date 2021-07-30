@@ -9,3 +9,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin wrapperRWD($width){
+    .wrapper{
+        width: $width;
+    }
+}
