@@ -41,14 +41,7 @@
         &--about::after{background-color: $color-white-dark;}
 
         &:hover:before{
-            background-color: $color-black;
-        }
-
-        &--active {
-            font-weight: 900;
-            &:before {
-                background-color: $color-black;
-            }
+            background-color: $color-white-light;
         }
 
         a { color: $color-black;}
