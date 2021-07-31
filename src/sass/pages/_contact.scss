@@ -1,8 +1,9 @@
 .contact {
-    background: url("./../img/corner.svg"), url("./../img/hire.svg"), $color-primary;
-    background-size: 40%, contain;
-    background-position: bottom right, left;
-    background-repeat: no-repeat, repeat;
+    background: 
+        url("./../img/hire.svg"),
+        top left,
+        $color-primary;
+    background-size: 100%;
     
     //Margin collapsing fix 
     padding-top: 6.6rem;
@@ -14,12 +15,13 @@
     }
 
     &__container {
-        // display: flex;
-        // flex-direction: row;
-        // align-items: center;
-        // justify-content: space-between;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 60% 40%;
+        background-color: $color-white-light;
+        border-radius: 2.5rem;
+        margin: 4rem auto;
+        padding: 5rem;
+        width: 75%;
     }
 
     &__form {
