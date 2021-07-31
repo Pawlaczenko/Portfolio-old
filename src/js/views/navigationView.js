@@ -6,3 +6,13 @@ export const stickyBar = posY => {
         header.classList.remove('header--scrolled');
     }
 }
+
+export const handleBurger = () => {
+    let menuButton = document.getElementById('menuButton');
+    let navigation = document.querySelector('.nav');
+    menuButton.addEventListener('click', e => {
+        menuButton.classList.toggle('is-active');
+        navigation.classList.toggle('nav--opened');
+        e.preventDefault();
+    });
+}

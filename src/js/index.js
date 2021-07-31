@@ -8,6 +8,7 @@ import { initAnimations } from './views/animations.js';
 
 (function () {
     document.querySelector("#mailform").addEventListener("submit", formView.handleSubmit);
+    navigationView.handleBurger();
 
     window.addEventListener('scroll', () => {
         navigationView.stickyBar(window.scrollY);

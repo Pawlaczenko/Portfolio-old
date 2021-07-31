@@ -1,4 +1,26 @@
 .nav {
+    
+    @media only screen and (max-width: $bp-small) {
+        position: fixed;
+        right: -55vw;
+        top: 0;
+        background: 
+        url("./../img/arrows.svg") 100% repeat-y,
+        $color-white-light;
+        background-size: 50%, contain;
+        height: 100vh;
+        width: 55vw;
+        transition: all .2s ease-in-out;
+
+        @include flex-center-center;
+    }
+
+    &--opened {
+        @media only screen and (max-width: $bp-small) {
+            right: 0vw;
+            box-shadow: $shadow-light;
+        }
+    }
 
     &__list {
         list-style-type: none;
@@ -6,12 +28,23 @@
         display: grid;
         grid-template-columns: repeat(4,max-content);
         column-gap: 6rem;
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4,10rem);
+        }
     }
 
     &__item {
         font-size: 2rem;
         font-weight: 300;
         position: relative;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 4rem;
+            text-align: center;
+            align-self: center;
+        }
 
         &::before {
             content: "";
@@ -34,6 +67,10 @@
             position: absolute;
             right: -3.5rem;
             top: 35%;
+
+            @media only screen and (max-width: $bp-small) {
+                display: none;
+            }
         }
 
         &--home::after{background-color: $color-red;}
@@ -42,6 +79,9 @@
 
         &:hover:before{
             background-color: $color-white-light;
+            @media only screen and (max-width: $bp-small) {
+                background-color: black;
+            }
         }
 
         a { color: $color-black;}

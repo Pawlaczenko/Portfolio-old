@@ -28,3 +28,23 @@
         padding-bottom: .5rem;
     }
 }
+
+.menu-button {
+    position: relative;
+	display: none;
+	padding: 1.5rem;
+	background-color: $color-white-light;
+    border-radius: 100%;
+
+    @media only screen and (max-width: $bp-small) {
+        display: block;
+    }
+}
+
+.burger-icon {
+    @include burger(2.8rem, .4rem, .5rem, $color-black);
+}
+
+.menu-button.is-active .burger-icon {
+	@include burger-to-cross;
+}
