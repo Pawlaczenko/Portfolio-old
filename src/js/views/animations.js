@@ -66,9 +66,10 @@ export const initAnimations = () => {
     });
 
     const formEl = document.querySelector(".contact__form");
-    const infoEl = document.querySelector(".contact__options");
+    const infoEl = document.querySelector(".contact__right");
 
     contactTl.from(".contact__header", { opacity: 0, x: -50, duration: 1.5, ease: "elastic(1, 0.3)" })
         .from(formEl.children, { y: 10, opacity: 0, duration: 1, ease: "easeInOut)", stagger: .2 }, "-=1.2")
+        .fromTo(".contact", { backgroundPositionX: "120%" }, { backgroundPositionX: "100%", ease: "power2.out", duration: "1.5" }, "-=1.4")
         .from(infoEl.children, { y: 10, opacity: 0, duration: 1, ease: "easeInOut)", stagger: .2 }, "-=.95");
 }

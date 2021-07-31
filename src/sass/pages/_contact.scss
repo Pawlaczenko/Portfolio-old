@@ -1,9 +1,9 @@
 .contact {
     background: 
-        url("./../img/hire.svg"),
-        top left,
+        url("./../img/hire.svg") top left,
+        url("./../img/arrows-white.svg") 100% repeat-y,
         $color-primary;
-    background-size: 100%;
+    background-size: 100%, contain;
     
     //Margin collapsing fix 
     padding-top: 6.6rem;
@@ -15,6 +15,7 @@
     }
 
     &__container {
+        position: relative;
         display: grid;
         grid-template-columns: 60% 40%;
         background-color: $color-white-light;
@@ -22,39 +23,78 @@
         margin: 4rem auto;
         padding: 5rem;
         width: 75%;
+
+        box-shadow: $shadow-light;
     }
 
     &__form {
         margin-top: 7rem;
     }
 
-    &__options {
-        margin-top: 7rem;
+    &__right {
+        position: absolute;
+        right: 0;
+        top: -5%;
+
+        height: 110%;
+        width: 40%;
+
+        background-color: $color-white-dark;
+        background: url('./../img/back-paint-contact.svg'),$color-white-dark;
+        background-size: cover;
+        border-radius: 2.5rem;
+        color: $color-white-dark;
+        box-shadow: $shadow-light;
     }
 
     &__heading {
-
+        color: $color-white-light;
+        margin: 6rem 4rem;
     }
 
     &__links {
-        margin-top: 7rem;
+        margin: 7rem 4rem;
         list-style-type: none;
     }
 
     &__item {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         display: flex;
         align-items: center;
         margin: 2rem 0;
     }
 
     &__icon {
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: $color-white-light;
+    }
+
+    &__icon-overlay {
+        width: 4rem;
+        height: 4rem;
         margin-right: 1.5rem;
+
+        background-color: $color-blue;
+        border-radius: 100%;
+
+        @include flex-center-center;
     }
 
     &__link {
-        color: $color-black;
+        color: $color-white-dark;
+    }
+
+    &__figure {
+        width: 90%;
+        position: absolute;
+        bottom: -4px;
+        left: 25%;
+
+        
+    }
+
+    &__image {
+        width: 100%;
     }
 }
