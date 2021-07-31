@@ -69,4 +69,18 @@
     &__button {
         align-self: flex-start;
     }
+
+    &__status {
+        font-weight: 900;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 1.5rem;
+        transition: all .2s  ease-in-out;
+
+        &--success {background-color: $color-blue;}
+        &--error {background-color: $color-red;}
+        &--success, &--error { margin-top: 3rem;}
+    }
 }
