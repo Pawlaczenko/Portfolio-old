@@ -10,9 +10,17 @@ export const stickyBar = posY => {
 export const handleBurger = () => {
     let menuButton = document.getElementById('menuButton');
     let navigation = document.querySelector('.nav');
+    let navList = document.querySelector('.nav__list');
+
     menuButton.addEventListener('click', e => {
         menuButton.classList.toggle('is-active');
         navigation.classList.toggle('nav--opened');
         e.preventDefault();
+    });
+
+    navList.addEventListener('click', e => {
+        if (e.target.tagName === 'A') {
+            navigation.classList.toggle('nav--opened');
+        }
     });
 }

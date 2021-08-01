@@ -27,6 +27,10 @@
         padding:0 5rem 
     }
 
+    @media only screen and (max-width: $bp-tiny) {
+        padding:0 3rem 
+    }
+
 }
 
 @mixin buttonBackground($base_color, $base_color_dark){
