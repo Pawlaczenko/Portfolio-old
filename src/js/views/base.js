@@ -1,7 +1,7 @@
 export const HREFS = {
-    portfolio: "http://moje-portfolio.pl/bartlomiej_pawlak/",
     github: "https://github.com/Pawlaczenko/",
-    githubPages: "https://pawlaczenko.github.io/"
+    githubPages: "https://pawlaczenko.github.io/",
+    facebook: "https://www.facebook.com/bartek.pawlak.754"
 }
 
 export const sections = ['home', 'portfolio', 'about', 'contact'];

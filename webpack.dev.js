@@ -14,7 +14,9 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
+      template: "./src/index.html",
+      favicon: './src/img/favicon.ico',
+      filename: './index.html',
     }),
     new CopyPlugin({
       patterns: [
@@ -29,7 +31,8 @@ module.exports = merge(common, {
       ]
     }),
     // new FaviconsWebpackPlugin('./src/img/favicon.ico'),
-    new ExtractTextPlugin("style.css")
+    new ExtractTextPlugin("style.css"),
+    new FaviconsWebpackPlugin('./src/img/favicon.ico')
   ],
   module: {
     rules: [
