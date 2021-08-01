@@ -2,14 +2,14 @@
     
     @media only screen and (max-width: $bp-small) {
         position: fixed;
-        right: -55vw;
+        right: -80vw;
         top: 0;
         background: 
         url("./../img/arrows.svg") 100% repeat-y,
         $color-white-light;
         background-size: 50%, contain;
         height: 100vh;
-        width: 55vw;
+        width: 80vw;
         transition: all .2s ease-in-out;
 
         @include flex-center-center;

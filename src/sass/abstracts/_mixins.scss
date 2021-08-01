@@ -10,10 +10,23 @@
     justify-content: center;
 }
 
-@mixin wrapperRWD($width){
-    .wrapper{
-        width: $width;
+@mixin wrapperRWD(){
+    @media only screen and (min-width: $bp-largest) {
+        padding:0 19rem;
     }
+
+    @media only screen and (max-width: $bp-largest) {
+        padding:0 15rem;
+    }
+    
+    @media only screen and (max-width: $bp-medium) {
+        padding:0 11rem;
+    }
+    
+    @media only screen and (max-width: $bp-small) {
+        padding:0 5rem 
+    }
+
 }
 
 @mixin buttonBackground($base_color, $base_color_dark){

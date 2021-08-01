@@ -5,6 +5,10 @@
     justify-content: center;
     width: 80%;
 
+    @media only screen and (max-width: $bp-small) {
+        width: 100%;
+    }
+
     &__inlabel {
         position: relative;
     }
@@ -68,6 +72,9 @@
 
     &__button {
         align-self: flex-start;
+        @media only screen and (max-width: $bp-small) {
+            align-self: flex-end;
+        }
     }
 
     &__status {
