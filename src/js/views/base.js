@@ -25,6 +25,15 @@ export const projects = [
         gitLink: "Earthly"
     },
     {
+        title: 'MoviesBLOG',
+        date: 'October - December 2019',
+        desc: 'I developed MoviesBlog as the final project in my highschool. I wrote both front and back end.',
+        img: 'moviesblog.jpg',
+        techs: ['JavaScript', 'SCSS', 'HTML', 'PHP', 'MySQL'],
+        liveLink: "-1",
+        gitLink: "moviesBlog"
+    },
+    {
         title: 'pejper Soker',
         date: 'December 2018 - June 2019',
         desc: 'Group project. Game based on a well known time killer Paper Soccer. It contains of singleplayer and multiplayer modes.',

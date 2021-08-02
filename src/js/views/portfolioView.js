@@ -27,6 +27,7 @@ const renderTechnologies = techs => {
 
 export const renderProjects = project => {
     const projectsContainer = document.querySelector(".portfolio__content");
+    const liveLink = (project.liveLink === '-1') ? "http://moviesblog.infinityfreeapp.com/" : `${HREFS.githubPages}${project.liveLink}`;
 
     const template = `
     <div class="portfolio__item project">
@@ -43,7 +44,7 @@ export const renderProjects = project => {
                 ${renderTechnologies(project.techs)}
             </ul>
             <div class="project__buttons">
-                <a href="${HREFS.githubPages}${project.liveLink}" class="project__button" target="_blank">
+                <a href="${liveLink}" class="project__button" target="_blank">
                     <svg class="project__icon">
                         <use xlink:href="./assets/img/_sprite.svg#icon-play"></use>
                     </svg>
