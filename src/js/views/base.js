@@ -25,21 +25,12 @@ export const projects = [
         gitLink: "Earthly"
     },
     {
-        title: 'MoviesBLOG',
-        date: 'October - December 2019',
-        desc: 'I developed MoviesBlog as the ending project in my highschool. I wrote both frond and back end.',
-        img: 'moviesblog.jpg',
-        techs: ['JavaScript', 'SCSS', 'HTML', 'PHP', 'MySQL'],
-        liveLink: "moviesBlog",
-        gitLink: "moviesBlog"
-    },
-    {
         title: 'pejper Soker',
         date: 'December 2018 - June 2019',
         desc: 'Group project. Game based on a well known time killer Paper Soccer. It contains of singleplayer and multiplayer modes.',
         img: 'pejpersoker.jpg',
         techs: ['JavaScript', 'CSS', 'HTML', 'PHP', 'MySQL'],
-        liveLink: "pejper_soker/index.html",
+        liveLink: "PejperSoker/",
         gitLink: "PejperSoker"
     },
     {
@@ -48,7 +39,7 @@ export const projects = [
         desc: 'Group project. Developed using p5.js library. Works on canvas.',
         img: 'pacman.jpg',
         techs: ['JavaScript', 'SCSS', 'HTML', 'p5.js'],
-        liveLink: "pacman",
+        liveLink: "PacMan",
         gitLink: "PacMan"
     }];
 

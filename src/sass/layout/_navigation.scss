@@ -50,11 +50,12 @@
             content: "";
             display: block;
             position: absolute;
-            width: 100%;
+            width: 0;
             height: .2rem;
             background-color: transparent;
             bottom: -2px;
             left: 0;
+            transition: all .2s ease-in-out;
         }
 
         &:not(:last-child)::after{
@@ -79,6 +80,7 @@
 
         &:hover:before{
             background-color: $color-white-light;
+            width: 100%;                                                    
             @media only screen and (max-width: $bp-small) {
                 background-color: black;
             }

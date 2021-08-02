@@ -4,6 +4,7 @@
     align-items: stretch;
     justify-content: center;
     width: 80%;
+    position: relative;
 
     @media only screen and (max-width: $bp-small) {
         width: 100%;
@@ -89,5 +90,23 @@
         &--success {background-color: $color-blue;}
         &--error {background-color: $color-red;}
         &--success, &--error { margin-top: 3rem;}
+
+        @media only screen and (max-width: $bp-small) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &.loader::before{
+        @include flex-center-center;
+        content: url("../img/loader.gif");
+        opacity: .9;
+        position: absolute;
+        z-index: 10;
+        left: -1rem;
+        top: -1rem;
+        width: calc(100% + 2rem);
+        height: calc(100% + 2rem);
+        background-color: rgba($color-black,.3);
+        border-radius: 1.5rem;
     }
 }
