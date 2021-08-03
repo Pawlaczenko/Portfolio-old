@@ -120,17 +120,17 @@
                         class="contact__form form">
                         <div class="form__inlabel">
                             <input placeholder=" " autocomplete="off" type="text" name="name"
-                                class="form__input form__input--name" id="form-name" required>
+                                class="form__input form__input--name" id="form-name" required maxlength="30">
                             <label for="form-name" class="form__label">Name</label>
                         </div>
                         <div class="form__inlabel">
                             <input placeholder=" " autocomplete="off" type="email" name="email"
-                                class="form__input form__input--email" id="form-email" required>
+                                class="form__input form__input--email" id="form-email" required maxlength="320">
                             <label for="form-email" class="form__label">Email</label>
                         </div>
                         <div class="form__inlabel">
                             <textarea placeholder=" " autocomplete="off" name="message" id="form-message"
-                                class="form__input  form__message" required></textarea>
+                                class="form__input  form__message" required maxlength="2500"></textarea>
                             <label for="form-message" class="form__label">Message</label>
                         </div>
                         <button class="form__button button button--blue">send</button>

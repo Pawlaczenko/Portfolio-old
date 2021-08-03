@@ -21,6 +21,7 @@ export const handleBurger = () => {
     navList.addEventListener('click', e => {
         if (e.target.tagName === 'A') {
             navigation.classList.toggle('nav--opened');
+            menuButton.classList.toggle('is-active');
         }
     });
 }
