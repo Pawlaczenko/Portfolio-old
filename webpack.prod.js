@@ -12,7 +12,7 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     filename: "js/[name].[contentHash].bundle.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
   },
   optimization: {
     minimizer: [
@@ -44,10 +44,17 @@ module.exports = merge(common, {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
       {
-        test: /\.scss$/,
+        test: /\.(css|scss)$/,
         use: [
-          MiniCssExtractPlugin.loader, //3. Extract css into files
-          "css-loader", //2. Turns css into commonjs
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              //The relative path of the file where the current CSS is located relative to the packed root path dist
+              publicPath: '../../'
+            }
+          },
+          //3. Extract css into files
+          { loader: 'css-loader', options: { url: false, sourceMap: true } }, //2. Turns css into commonjs
           "sass-loader" //1. Turns sass into css
         ]
       }

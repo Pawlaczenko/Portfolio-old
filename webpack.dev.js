@@ -21,7 +21,7 @@ module.exports = merge(common, {
     new CopyPlugin({
       patterns: [
         {
-          from: './src/img/_sprite.svg',
+          from: './src/img/sprite.svg',
           to: 'assets/img/', // relative path in output directory
         },
         {

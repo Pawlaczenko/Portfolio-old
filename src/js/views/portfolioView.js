@@ -46,13 +46,13 @@ export const renderProjects = project => {
             <div class="project__buttons">
                 <a href="${liveLink}" class="project__button" target="_blank">
                     <svg class="project__icon">
-                        <use xlink:href="./assets/img/_sprite.svg#icon-play"></use>
+                        <use xlink:href="./assets/img/sprite.svg#icon-play"></use>
                     </svg>
                     <span class="project__link">live</span>
                 </a>
                 <a href="${HREFS.github}${project.gitLink}" class="project__button" target="_blank">
                     <svg class="project__icon">
-                        <use xlink:href="./assets/img/_sprite.svg#icon-github"></use>
+                        <use xlink:href="./assets/img/sprite.svg#icon-github"></use>
                     </svg>
                     <span class="project__link">github</span>
                 </a>
