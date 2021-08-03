@@ -49,10 +49,12 @@
     &__icon {
         fill: $color-grey;
         width: 3rem;
+        height: 3rem;
         aspect-ratio: 1/1;
 
         @media only screen and (max-width: $bp-smaller) {
            width: 4rem;
+           height: 4rem;
             margin-right: .5rem;
         }
     }
