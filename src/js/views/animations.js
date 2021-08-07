@@ -21,13 +21,13 @@ export const initAnimations = () => {
         }
     });
 
-    gsap.fromTo(".portfolio", { backgroundSize: "4%" }, {
-        backgroundSize: "60%", duration: 1, ease: "easeIn", scrollTrigger: {
-            trigger: ".portfolio",
-            start: "5px bottom",
-            scrub: 1
-        }
-    })
+    // gsap.fromTo(".portfolio", { backgroundSize: "4%" }, {
+    //     backgroundSize: "60%", duration: 1, ease: "easeIn", scrollTrigger: {
+    //         trigger: ".portfolio",
+    //         start: "5px bottom",
+    //         scrub: 1
+    //     }
+    // })
 
     const projectsMrkp = document.querySelectorAll('.project');
     projectsMrkp.forEach(e => {
